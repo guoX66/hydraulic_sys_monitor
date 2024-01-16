@@ -88,4 +88,12 @@ python train.py --y coolerCondition & python train.py --y valveCondition & pytho
 python t_all.py --y coolerCondition
 ```
 
+或
+
+```bash
+python t_all.py --y coolerCondition & python t_all.py --y valveCondition & python t_all.py --y pumpLeak & python t_all.py --y hydraulicAcc
+```
+
 测试结果保存在result/test中
+
+
