@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ## 数据处理
 
-数据已经保存在data文件夹中，来源：[液压系统的状态监测 - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems)
+将数据保存至data文件夹中，来源：[液压系统的状态监测 - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems)
 
 ```
 --hydraulic_sys_monitor
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 python load.py
 ```
 
-
+data文件夹已经带有处理好的data.npz
 
 
 
@@ -89,5 +89,3 @@ python t_all.py --y coolerCondition
 ```
 
 测试结果保存在result/test中
-
-
