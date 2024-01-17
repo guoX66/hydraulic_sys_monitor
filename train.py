@@ -6,6 +6,7 @@ from config import *
 from model import ResNet
 from utils import process, bar, make_plot, deal, write_log, write_txt, t_model
 from sklearn.model_selection import train_test_split
+import torch
 
 if __name__ == '__main__':
     Y, state_list = deal(in_Y)
@@ -41,7 +42,7 @@ if __name__ == '__main__':
     loss_list = []
     txt_list = []
     st = time.strftime('%Y-%m-%d %H:%M', time.localtime())
-    ss_time = time.perf_counter()
+    ss_time = time.time()
     write_log('开始时间: ' + st, txt_list)
     write_log(f'model : {model_name}', txt_list)
     write_log(f'epochs : {max_epochs}', txt_list)
@@ -56,7 +57,8 @@ if __name__ == '__main__':
     optimizer = torch.optim.Adam(model.parameters(), lr=learn_rate)  # 可调超参数
     scheduler = StepLR(optimizer, step_size=step_size, gamma=gamma)
     gpus = [0, 1]
-    torch.cuda.set_device('cuda:{}'.format(gpus[0]))
+    if torch.cuda.is_available():
+        torch.cuda.set_device('cuda:{}'.format(gpus[0]))
     try:
         model = nn.DataParallel(model, device_ids=gpus, output_device=gpus[0])
     except AssertionError:
@@ -120,11 +122,9 @@ if __name__ == '__main__':
     ee_time = time.time()
     total_time = ee_time - ss_time
     write_log("本次训练用时:{}小时:{}分钟:{}秒".format(int(total_time // 3600), int((total_time % 3600) // 60),
-                                                     int(total_time % 60)), txt_list)
+                                                       int(total_time % 60)), txt_list)
 
     txt_list, acc = t_model(Dte, txt_list, f'result/log/class_id-{out_put}.json', f'{model_path}/{model_name}.pth')
     write_txt(f'{result_path}/log', txt_list, model_name)
     make_plot(loss_list, 'loss', model_name)
     make_plot(acc_list, 'acc', model_name)
-
-

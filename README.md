@@ -60,7 +60,7 @@ data文件夹已经带有处理好的data.npz
 
 使用一维Resnet50网络，有其他网络也可以加入model.py中使用
 
-监控变量可选择coolerCondition、valveCondition、pumpLeak、hydraulicAcc，训练得到的模型保存在models文件夹中
+监控变量可选择coolerCondition、valveCondition、pumpLeak、hydraulicAcc、stableFlag，训练得到的模型保存在models文件夹中
 
 ```bash
 python train.py --y coolerCondition --epochs 50 --batch_size 32 --val_rate 0.15 --test_rate 0.05 --lr 0.001 --step_size 1 --gamma 0.95 --random_state 42
@@ -69,7 +69,7 @@ python train.py --y coolerCondition --epochs 50 --batch_size 32 --val_rate 0.15 
 或者依次训练四种变量（使用）
 
 ```bash
-python train.py --y coolerCondition & python train.py --y valveCondition & python train.py --y pumpLeak & python train.py --y hydraulicAcc
+python train.py --y coolerCondition & python train.py --y valveCondition & python train.py --y pumpLeak & python train.py --y hydraulicAcc & python train.py --y stableFlag
 ```
 
 训练过程保存在result/train中
@@ -91,9 +91,7 @@ python t_all.py --y coolerCondition
 或
 
 ```bash
-python t_all.py --y coolerCondition & python t_all.py --y valveCondition & python t_all.py --y pumpLeak & python t_all.py --y hydraulicAcc
+python t_all.py --y coolerCondition & python t_all.py --y valveCondition & python t_all.py --y pumpLeak & python t_all.py --y hydraulicAcc & python t_all.py --y stableFlag
 ```
 
 测试结果保存在result/test中
-
-

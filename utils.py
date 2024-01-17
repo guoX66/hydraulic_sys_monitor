@@ -102,7 +102,8 @@ def make_plot(data, mode, filename):
 
 def t_model(Dte, txt_list, class_file, model_name):
     gpus = [0, 1]
-    torch.cuda.set_device('cuda:{}'.format(gpus[0]))
+    if torch.cuda.is_available():
+        torch.cuda.set_device('cuda:{}'.format(gpus[0]))
     write_log('-' * 43 + '测试结果如下' + '-' * 43, txt_list)
     with open(class_file, 'r', encoding='UTF-8') as f:
         class_dict = json.load(f)

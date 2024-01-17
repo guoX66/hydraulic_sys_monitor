@@ -1,13 +1,13 @@
 import argparse
 import os
 import numpy as np
-import torch
+
 """
-python train.py --y coolerCondition & python train.py --y valveCondition & python train.py --y pumpLeak & python train.py --y hydraulicAcc
+python train.py --y coolerCondition & python train.py --y valveCondition & python train.py --y pumpLeak & python train.py --y hydraulicAcc & python train.py --y stableFlag
 """
 parser = argparse.ArgumentParser()
-parser.add_argument('--y', type=str, default='valveCondition',
-                    choices=['coolerCondition', 'valveCondition', 'pumpLeak', 'hydraulicAcc'])
+parser.add_argument('--y', type=str, default='stableFlag',
+                    choices=['coolerCondition', 'valveCondition', 'pumpLeak', 'hydraulicAcc', 'stableFlag'])
 parser.add_argument('--model_name', type=str, default='resnet50')
 parser.add_argument('--epochs', type=int, default=50)
 parser.add_argument('--batch_size', type=int, default=32)
@@ -35,10 +35,8 @@ learn_rate = args.lr  # 学习率
 step_size = args.step_size  # 学习率递变的步长
 gamma = args.gamma  # 学习率递增系数,也即每个epoch学习率变为原来的0.95
 
-
 model_name += '_' + str(out_put)
 npfile = np.load('data/data.npz', allow_pickle=True)
 X = npfile['X_normalize']
 out_put = 'y_' + out_put
 in_Y = npfile[out_put]
-

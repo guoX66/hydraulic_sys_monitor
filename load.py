@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 
 
-
 # 读取文件
 def get_files(dir_path, filename):
     return pd.read_csv(os.path.join(dir_path, filename), sep="\t", header=None)
@@ -21,6 +20,7 @@ def mean_conversion(df):
     df = pd.DataFrame(df)
     df1 = df.mean(axis=1)
     return df1
+
 
 if __name__ == "__main__":
     """
@@ -113,7 +113,9 @@ if __name__ == "__main__":
     """
     # 绘制每个传感器的直方图
     X.hist(bins=50, figsize=(20, 15))
+    plt.savefig('result/过程线图.png')
     plt.show()
+
 
     """
         各种传感器参数之间的相关矩阵
@@ -127,13 +129,16 @@ if __name__ == "__main__":
     cmap = sns.diverging_palette(220, 10, as_cmap=True)
     sns.heatmap(corr_matrix, mask=mask, cmap=cmap, vmax=.3, center=0, annot=True,
                 square=True, linewidths=.5, cbar_kws={"shrink": .5})
+    plt.savefig('result/相关性矩阵.png')
     plt.show()
+
 
     """
         数据归一化
     """
     X_normalize = StandardScaler().fit_transform(X)
-    np.savez('data/data', X_normalize=X_normalize, y_coolerCondition=y_coolerCondition, y_valveCondition=y_valveCondition,
-             y_pumpLeak=y_pumpLeak, y_hydraulicAcc=y_hydraulicAcc, allow_pickle=True)
+    np.savez('data/data', X_normalize=X_normalize, y_coolerCondition=y_coolerCondition,
+             y_valveCondition=y_valveCondition,
+             y_pumpLeak=y_pumpLeak, y_hydraulicAcc=y_hydraulicAcc, y_stableFlag=y_stableFlag, allow_pickle=True)
 
     print('Processing completed!')
