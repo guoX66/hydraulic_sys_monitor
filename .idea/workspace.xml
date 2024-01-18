@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bb290a8-5bed-4f45-968a-18c50a9d4f70" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/load.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/resnet50_stableFlag.pth" beforeDir="false" afterPath="$PROJECT_DIR$/models/resnet50_stableFlag.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/log/resnet50_coolerCondition.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/log/resnet50_coolerCondition.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/log/resnet50_hydraulicAcc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/log/resnet50_hydraulicAcc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/log/resnet50_pumpLeak.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/log/resnet50_pumpLeak.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/log/resnet50_stableFlag.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/log/resnet50_stableFlag.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/log/resnet50_valveCondition.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/log/resnet50_valveCondition.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/test/resnet50_coolerCondition.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/test/resnet50_coolerCondition.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/test/resnet50_hydraulicAcc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/test/resnet50_hydraulicAcc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/test/resnet50_pumpLeak.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/test/resnet50_pumpLeak.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/test/resnet50_valveCondition.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/test/resnet50_valveCondition.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/ACC-resnet50_coolerCondition.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/ACC-resnet50_coolerCondition.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/ACC-resnet50_hydraulicAcc.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/ACC-resnet50_hydraulicAcc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/ACC-resnet50_pumpLeak.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/ACC-resnet50_pumpLeak.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/ACC-resnet50_stableFlag.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/ACC-resnet50_stableFlag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/ACC-resnet50_valveCondition.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/ACC-resnet50_valveCondition.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/LOSS-resnet50_coolerCondition.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/LOSS-resnet50_coolerCondition.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/LOSS-resnet50_hydraulicAcc.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/LOSS-resnet50_hydraulicAcc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/LOSS-resnet50_pumpLeak.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/LOSS-resnet50_pumpLeak.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/LOSS-resnet50_stableFlag.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/LOSS-resnet50_stableFlag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/train/LOSS-resnet50_valveCondition.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/train/LOSS-resnet50_valveCondition.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/相关性矩阵.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/过程线图.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/t_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/t_all.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2b6f6zoAUXnIM3T76RVqmgEzdye" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.process">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hydraulic_sys_monitor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="download" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hydraulic_sys_monitor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/download.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="load" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hydraulic_sys_monitor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/load.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="process" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hydraulic_sys_monitor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.process" />
+        <item itemvalue="Python.download" />
+        <item itemvalue="Python.load" />
+        <item itemvalue="Python.demo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="8bb290a8-5bed-4f45-968a-18c50a9d4f70" name="更改" comment="" />
+      <created>1705540279125</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705540279125</updated>
+      <workItem from="1705540281247" duration="10209000" />
+      <workItem from="1705556478850" duration="152000" />
+      <workItem from="1705556720261" duration="2066000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hydraulic_sys_monitor$process.coverage" NAME="process 覆盖结果" MODIFIED="1705547775015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hydraulic_sys_monitor$demo.coverage" NAME="demo 覆盖结果" MODIFIED="1705543230589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hydraulic_sys_monitor$download.coverage" NAME="download 覆盖结果" MODIFIED="1705545588413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hydraulic_sys_monitor$load.coverage" NAME="load 覆盖结果" MODIFIED="1705543817382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
