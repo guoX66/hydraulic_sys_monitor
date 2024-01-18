@@ -3,11 +3,44 @@
     https://blog.csdn.net/Mr_Robert/article/details/84672797
 """
 import os
+import time
+import zipfile
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
+import requests
+
+
+def download(url, filepath):
+    response = requests.get(url, stream=True)
+    size = 0
+    chunk_size = 1024 * 1024
+    try:
+        if response.status_code == 200:
+            start = time.perf_counter()
+            with open(filepath, 'wb') as file:  # 显示进度条
+                for data in response.iter_content(chunk_size=chunk_size):
+                    file.write(data)
+                    size += len(data)
+                    s = size / (1024 * 1024)
+                    t = time.perf_counter() - start
+                    print(
+                        "\r下载大小:{:^3.1f} MB 速度:{:.2f} MB/s 用时:{:.2f} s".format(s, s / t, t),
+                        end="")
+                print()
+        else:
+            print('Connect failed！')
+
+    except Exception as ex:
+        print(ex)
+
+
+def unzip(i_file, o_file):
+    zip_file = zipfile.ZipFile(i_file)
+    zip_file.extractall(o_file)
+    zip_file.close()
 
 
 # 读取文件
@@ -23,10 +56,19 @@ def mean_conversion(df):
 
 
 if __name__ == "__main__":
-    """
-        加载数据
-    """
     base_dir = r"data"
+    os.makedirs(base_dir, exist_ok=True)
+    """
+    下载数据
+    """
+    url = "https://archive.ics.uci.edu/static/public/447/condition+monitoring+of+hydraulic+systems.zip"
+    download(url, "data.zip")
+    unzip('data.zip', 'data')
+    os.remove('data.zip')
+
+    """
+            加载数据
+    """
     # 加载所有压力传感器数据(sensor data)
     pressureFile1 = get_files(dir_path=base_dir, filename='PS1.txt')
     array = pressureFile1.values[0::, 0::]  # 读取全部行，全部列
@@ -116,7 +158,6 @@ if __name__ == "__main__":
     plt.savefig('result/过程线图.png')
     plt.show()
 
-
     """
         各种传感器参数之间的相关矩阵
     """
@@ -131,7 +172,6 @@ if __name__ == "__main__":
                 square=True, linewidths=.5, cbar_kws={"shrink": .5})
     plt.savefig('result/相关性矩阵.png')
     plt.show()
-
 
     """
         数据归一化

@@ -39,7 +39,7 @@ def deal(in_Y):
     return Y, state_list
 
 
-def bar(i, t, start):
+def bar(i, t, start, des):
     l = 50
     f_p = i / t
     n_p = (t - i) / t
@@ -47,7 +47,7 @@ def bar(i, t, start):
     need_do = "-" * int(n_p * l)
     progress = f_p * 100
     dur = time.perf_counter() - start
-    print("\r训练进度:{:^3.2f}%[{}->{}] 用时:{:.2f}s".format(progress, finsh, need_do, dur), end="")
+    print("\r{}进度:{:^3.2f}%[{}->{}] 用时:{:.2f}s".format(des, progress, finsh, need_do, dur), end="")
 
 
 def write_log(log, txt_list):

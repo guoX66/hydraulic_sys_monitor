@@ -36,7 +36,15 @@ pip install -r requirements.txt
 
 ## 数据处理
 
-将数据保存至data文件夹中，来源：[液压系统的状态监测 - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems)
+运行数据下载与处理程序，处理后的数据将保存在data/data.npz中，处理过程参考[利用xgboost算法对液压系统的状态进行预测并分析影响因素重要性_液压油缸工作状态预测-CSDN博客](https://blog.csdn.net/Mr_Robert/article/details/84672797)
+
+数据来源：[液压系统的状态监测 - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems)
+
+```bash
+python load.py
+```
+
+运行成功后结构如下：
 
 ```
 --hydraulic_sys_monitor
@@ -44,12 +52,6 @@ pip install -r requirements.txt
         --PS1.txt
         --PS2.txt
         ...
-```
-
-运行数据加载与处理程序，处理后的数据将保存在data/data.npz中，参考[利用xgboost算法对液压系统的状态进行预测并分析影响因素重要性_液压油缸工作状态预测-CSDN博客](https://blog.csdn.net/Mr_Robert/article/details/84672797)
-
-```bash
-python load.py
 ```
 
 data文件夹已经带有处理好的data.npz

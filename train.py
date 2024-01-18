@@ -74,7 +74,7 @@ if __name__ == '__main__':
             optimizer.zero_grad()  # 梯度归零
             loss.backward()  # 反向传播计算梯度
             optimizer.step()  # 梯度优化
-            bar(j + 1, len(Dtr), start=start_time)
+            bar(j + 1, len(Dtr), start_time, '训练')
         print()
         scheduler.step()
         model.eval()
