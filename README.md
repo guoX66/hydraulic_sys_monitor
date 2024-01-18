@@ -1,6 +1,6 @@
 # 液压系统状态监控与分类
 
-根据压力、体积流量和温度等过程值，得出四个液压元件（冷却器、阀门、泵和蓄能器）的状况。
+根据压力、体积流量和温度等过程值，得出四个液压元件（冷却器、阀门、泵和蓄能器）的五种状况值。
 
 
 
@@ -34,14 +34,14 @@ pip install -r requirements.txt
 
 
 
-## 数据处理
-
-运行数据下载与处理程序，处理后的数据将保存在data/data.npz中，处理过程参考[利用xgboost算法对液压系统的状态进行预测并分析影响因素重要性_液压油缸工作状态预测-CSDN博客](https://blog.csdn.net/Mr_Robert/article/details/84672797)
+## 数据下载
 
 数据来源：[液压系统的状态监测 - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems)
 
-```bash
-python load.py
+运行数据下载程序，将数据下载到data文件夹中
+
+```
+python download.py
 ```
 
 运行成功后结构如下：
@@ -49,9 +49,17 @@ python load.py
 ```
 --hydraulic_sys_monitor
     --data
-        --PS1.txt
-        --PS2.txt
-        ...
+        --PS1.txt
+        --PS2.txt
+        ... 
+```
+
+## 数据处理
+
+运行数据处理程序，处理后的数据将保存在data/data.npz中，处理过程参考[利用xgboost算法对液压系统的状态进行预测并分析影响因素重要性_液压油缸工作状态预测-CSDN博客](https://blog.csdn.net/Mr_Robert/article/details/84672797)
+
+```bash
+python process.py
 ```
 
 data文件夹已经带有处理好的data.npz
@@ -68,7 +76,7 @@ data文件夹已经带有处理好的data.npz
 python train.py --y coolerCondition --epochs 50 --batch_size 32 --val_rate 0.15 --test_rate 0.05 --lr 0.001 --step_size 1 --gamma 0.95 --random_state 42
 ```
 
-或者依次训练四种变量（使用）
+或者依次训练四种变量（使用默认参数）
 
 ```bash
 python train.py --y coolerCondition & python train.py --y valveCondition & python train.py --y pumpLeak & python train.py --y hydraulicAcc & python train.py --y stableFlag

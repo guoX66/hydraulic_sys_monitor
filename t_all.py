@@ -1,7 +1,7 @@
 import time
 from config import *
 from utils import t_model, deal, process, write_txt, write_log
-
+import torch
 if __name__ == '__main__':
     txt_list = []
     Y, state_list = deal(in_Y)
