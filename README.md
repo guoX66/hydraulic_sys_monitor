@@ -76,7 +76,7 @@ data文件夹已经带有处理好的data.npz
 python train.py --y coolerCondition --epochs 50 --batch_size 32 --val_rate 0.15 --test_rate 0.05 --lr 0.001 --step_size 1 --gamma 0.95 --random_state 42
 ```
 
-或者依次训练四种变量（使用默认参数）
+或者依次训练五种变量（使用默认参数）
 
 ```bash
 python train.py --y coolerCondition & python train.py --y valveCondition & python train.py --y pumpLeak & python train.py --y hydraulicAcc & python train.py --y stableFlag
