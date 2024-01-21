@@ -92,7 +92,7 @@ python train.py --y coolerCondition & python train.py --y valveCondition & pytho
 
 在所有数据上进行测试，计算正确率
 
-监控变量可选择coolerCondition、valveCondition、pumpLeak、hydraulicAcc
+监控变量可选择coolerCondition、valveCondition、pumpLeak、hydraulicAcc、stableFlag
 
 ```bash
 python t_all.py --y coolerCondition
